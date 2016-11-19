@@ -1,0 +1,100 @@
+{
+    "author": "LARPkitten",
+    "dependencies": {
+        "pebble-clay": "^1.0.3"
+    },
+    "keywords": [],
+    "name": "zelda-watch-green",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Legend of Zelda Watch (Green)",
+        "enableMultiJS": true,
+        "messageKeys": {
+            "BG_COLOR": 1,
+            "DATE_FORMAT": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/triforce_bg_red.png",
+                    "name": "IMAGE_TRIFORCE_BG_RED",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite",
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Heart-3.png",
+                    "name": "HEART_3",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Heart-1.png",
+                    "name": "HEART_1",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/bt-icon-bw.png",
+                    "name": "BT_ICON",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/triforce_bg_green.png",
+                    "name": "IMAGE_TRIFORCE_BG_GREEN",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Hearts.png",
+                    "name": "IMAGE_HEARTS",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/HeartFull.png",
+                    "name": "HEART_FULL",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Heart-4.png",
+                    "name": "HEART_4",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Heart-2.png",
+                    "name": "HEART_2",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/Triforce.ttf",
+                    "name": "FONT_TRIFORCE_16",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Triforce.ttf",
+                    "name": "FONT_TRIFORCE_36",
+                    "type": "font"
+                },
+                {
+                    "file": "images/HeartsFull.png",
+                    "name": "IMAGE_HEARTS_FULL",
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "4c2dddc6-2ace-4755-8753-0d6d01231ea6",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "3.0.0"
+}
