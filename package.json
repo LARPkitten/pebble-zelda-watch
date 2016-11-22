@@ -4,12 +4,12 @@
         "pebble-clay": "^1.0.3"
     },
     "keywords": [],
-    "name": "zelda-watch-green",
+    "name": "zelda-watch",
     "pebble": {
         "capabilities": [
             "configurable"
         ],
-        "displayName": "Legend of Zelda Watch (Green)",
+        "displayName": "Legend of Zelda Watch",
         "enableMultiJS": true,
         "messageKeys": {
             "BG_COLOR": 1,
@@ -18,6 +18,65 @@
         "projectType": "native",
         "resources": {
             "media": [
+                {
+                    "file": "images/TriforceBW.png",
+                    "name": "IMAGE_TRIFORCE_BW",
+                    "targetPlatforms": [
+                        "aplite",
+                        "diorite"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TriforceRed.png",
+                    "name": "IMAGE_TRIFORCE_RED",
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk",
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TriforcePurple.png",
+                    "name": "IMAGE_TRIFORCE_PURPLE",
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk",
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TriforceOrange.png",
+                    "name": "IMAGE_TRIFORCE_ORANGE",
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk",
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TriforceGreen.png",
+                    "name": "IMAGE_TRIFORCE_GREEN",
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk",
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/TriforceBlue.png",
+                    "name": "IMAGE_TRIFORCE_BLUE",
+                    "targetPlatforms": [
+                        "basalt",
+                        "chalk",
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                },
                 {
                     "file": "images/triforce_bg_red.png",
                     "name": "IMAGE_TRIFORCE_BG_RED",
@@ -96,5 +155,5 @@
             "watchface": true
         }
     },
-    "version": "3.0.0"
+    "version": "3.1.0"
 }

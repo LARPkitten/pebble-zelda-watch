@@ -30,8 +30,11 @@ static Layer *s_hearts_layer;
 
 static int date;
 
-const uint32_t colors[2] = {RESOURCE_ID_IMAGE_TRIFORCE_BG_GREEN,
-                            RESOURCE_ID_IMAGE_TRIFORCE_BG_RED};
+const uint32_t colors[5] = {RESOURCE_ID_IMAGE_TRIFORCE_GREEN,
+                            RESOURCE_ID_IMAGE_TRIFORCE_RED,
+                            RESOURCE_ID_IMAGE_TRIFORCE_BLUE,
+                            RESOURCE_ID_IMAGE_TRIFORCE_ORANGE,
+                            RESOURCE_ID_IMAGE_TRIFORCE_PURPLE};
 
 // --- Time and Date Functions ---
 
@@ -105,10 +108,23 @@ static void in_recv_handler(DictionaryIterator *iter, void *context)
       { 
         persist_write_int(BG_COLOR, 1);
       }
+      else if(strcmp(color_t->value->cstring, "blue") == 0)
+      { 
+        persist_write_int(BG_COLOR, 2);
+      }
+      else if(strcmp(color_t->value->cstring, "orange") == 0)
+      { 
+        persist_write_int(BG_COLOR, 3);
+      }
+      else if(strcmp(color_t->value->cstring, "purple") == 0)
+      { 
+        persist_write_int(BG_COLOR, 4);
+      }
       else {
         APP_LOG(APP_LOG_LEVEL_DEBUG, "Error: in_recv_handler failed to recognize color_t.");
         APP_LOG(APP_LOG_LEVEL_DEBUG, color_t->value->cstring);
       }
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(colors[persist_read_int(BG_COLOR)]);
       bitmap_layer_set_bitmap(s_background_layer, s_background_bitmap);
     }

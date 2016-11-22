@@ -4,10 +4,6 @@ module.exports = [
     "defaultValue": "Legend of Zelda Watch Settings"
   },
   {
-    "type": "text",
-    "defaultValue": "Please allow 3-5 seconds for the watch face to update after saving."
-  },
-  {
     "type": "section",
     "items": [
       {
@@ -27,6 +23,18 @@ module.exports = [
           {
             "label": "Red",
             "value": "red"
+          },
+          {
+            "label": "Blue",
+            "value": "blue"
+          },
+          {
+            "label": "Orange",
+            "value": "orange"
+          },
+          {
+            "label": "Purple",
+            "value": "purple"
           }
         ]
       },
